@@ -6,84 +6,6 @@
 		children = 
 		[
 			{
-				_class = "MaterialGroupList"
-				children = 
-				[
-					{
-						_class = "DefaultMaterialGroup"
-						remaps = 
-						[
-							{
-								from = "black.vmat"
-								to = "materials/dev/primary_black.vmat"
-							},
-							{
-								from = "carbonfiber.vmat"
-								to = "materials/dev/primary_black.vmat"
-							},
-							{
-								from = "chrome.vmat"
-								to = "materials/particles/fluids/blood_decals/fluid_spray_b_decals_22_22_monochrome.vmat"
-							},
-							{
-								from = "glass.vmat"
-								to = "materials/glass/shatterglass_undamaged.vmat"
-							},
-							{
-								from = "glass_black.vmat"
-								to = "materials/dev/primary_black.vmat"
-							},
-							{
-								from = "grille.vmat"
-								to = "materials/dev/primary_black.vmat"
-							},
-							{
-								from = "interior_emissive.vmat"
-								to = "models/vehicles/dodge_challenger_2015/materials/interior_emissive.vmat"
-							},
-							{
-								from = "interior_leather_dark.vmat"
-								to = "materials/dev/primary_black.vmat"
-							},
-							{
-								from = "lights.vmat"
-								to = "models/vehicles/dodge_challenger_2015/materials/lights.vmat"
-							},
-							{
-								from = "interior_lod0.vmat"
-								to = "models/vehicles/dodge_challenger_2015/materials/interior_lod0.vmat"
-							},
-							{
-								from = "nodamage.vmat"
-								to = "materials/dev/primary_black.vmat"
-							},
-							{
-								from = "rtscreen.vmat"
-								to = "materials/dev/primary_black.vmat"
-							},
-							{
-								from = "skin.vmat"
-								to = "materials/dev/primary_black.vmat"
-							},
-							{
-								from = "tlights.vmat"
-								to = "materials/dev/primary_black.vmat"
-							},
-							{
-								from = "undercarriage.vmat"
-								to = "materials/dev/primary_black.vmat"
-							},
-							{
-								from = "wood.vmat"
-								to = "models/vehicles/dodge_challenger_2015/materials/wood.vmat"
-							},
-						]
-						use_global_default = false
-						global_default_material = ""
-					},
-				]
-			},
-			{
 				_class = "PhysicsShapeList"
 				children = 
 				[
@@ -92,9 +14,9 @@
 						parent_bone = "Main"
 						surface_prop = "default"
 						collision_prop = "default"
-						origin = [ 0.00917, 2.735249, 34.155193 ]
+						origin = [ -5.774514, 0.213215, 38.915703 ]
 						angles = [ 0.0, 90.0, 0.0 ]
-						dimensions = [ 86.26091, 238.788208, 52.496822 ]
+						dimensions = [ 81.216843, 227.220871, 57.267151 ]
 					},
 				]
 			},
@@ -117,6 +39,84 @@
 							exclude_by_default = false
 							exception_list = [  ]
 						}
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "black.vmat"
+								to = "materials/dev/primary_black.vmat"
+							},
+							{
+								from = "carbonfiber.vmat"
+								to = "materials/cable/rope.vmat"
+							},
+							{
+								from = "chrome.vmat"
+								to = "materials/default/white.vmat"
+							},
+							{
+								from = "glass.vmat"
+								to = "models/citizen_props/wineglass02.vmat"
+							},
+							{
+								from = "glass_black.vmat"
+								to = "materials/console_background.vmat"
+							},
+							{
+								from = "grille.vmat"
+								to = "materials/dev/primary_white.vmat"
+							},
+							{
+								from = "interior_emissive.vmat"
+								to = "models/vehicles/dodge_challenger_2015/materials/interior_emissive.vmat"
+							},
+							{
+								from = "interior_leather_dark.vmat"
+								to = "materials/dev/primary_black.vmat"
+							},
+							{
+								from = "interior_lod0.vmat"
+								to = "models/vehicles/dodge_challenger_2015/materials/interior_lod0.vmat"
+							},
+							{
+								from = "lights.vmat"
+								to = "models/vehicles/dodge_challenger_2015/materials/lights.vmat"
+							},
+							{
+								from = "nodamage.vmat"
+								to = "materials/dev/primary_white.vmat"
+							},
+							{
+								from = "rtscreen.vmat"
+								to = "materials/dev/primary_black.vmat"
+							},
+							{
+								from = "skin.vmat"
+								to = "materials/dev/primary_white.vmat"
+							},
+							{
+								from = "tlights.vmat"
+								to = "materials/dev/primary_black.vmat"
+							},
+							{
+								from = "undercarriage.vmat"
+								to = "materials/dev/primary_black.vmat"
+							},
+							{
+								from = "wood.vmat"
+								to = "models/vehicles/dodge_challenger_2015/materials/wood.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
 					},
 				]
 			},
