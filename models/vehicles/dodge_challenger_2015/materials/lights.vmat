@@ -2,12 +2,12 @@
 
 Layer0
 {
-	shader "vr_simple.vfx"
+	shader "simple.vfx"
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureColor "models/vehicles/dodge_challenger_2015/materials/interior_lod0.tga"
+	TextureColor "models/vehicles/dodge_challenger_2015/materials/lights.tga"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
