@@ -20,6 +20,7 @@ public partial class SandboxHud : HudEntity<RootPanel>
 
 		RootPanel.AddChild<HudBase>();
 		RootPanel.AddChild<Vitals>();
+		RootPanel.AddChild<Armour>();
 		RootPanel.AddChild<Ammo>();
 	
 
