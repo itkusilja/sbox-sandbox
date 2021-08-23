@@ -39,7 +39,7 @@
 							},
 							{
 								from = "interior_emissive.vmat"
-								to = "models/vehicles/dodge_challenger_2015/interior_emissive.vmat"
+								to = "models/vehicles/dodge_challenger_2015/materials/interior_emissive.vmat"
 							},
 							{
 								from = "interior_leather_dark.vmat"
@@ -47,7 +47,7 @@
 							},
 							{
 								from = "lights.vmat"
-								to = "models/vehicles/dodge_challenger_2015/lights.vmat"
+								to = "models/vehicles/dodge_challenger_2015/materials/lights.vmat"
 							},
 							{
 								from = "interior_lod0.vmat"
