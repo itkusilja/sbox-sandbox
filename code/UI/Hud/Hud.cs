@@ -38,6 +38,29 @@ public partial class Vitals : Panel
 	}
 }
 
+public partial class Armour : Panel
+{
+	public Label Armor;
+	public Label ArmorImg;
+
+	public Armour()
+	{
+		ArmorImg = Add.Label("", "armorImg");
+		Armor = ArmorImg.Add.Label("100", "armorText");
+	}
+
+	public override void Tick()
+	{
+
+		base.Tick();
+
+		var player = Local.Pawn;
+		if (player == null) return;
+
+		Armor.Text = $"100";
+	}
+}
+
 public partial class Ammo : Panel
 {
 	public Label Weapon;
