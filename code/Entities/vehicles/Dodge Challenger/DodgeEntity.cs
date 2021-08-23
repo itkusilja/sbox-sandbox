@@ -3,18 +3,18 @@ using System;
 using System.Collections.Generic;
 
 [Library( "vehicle_dodgechallenger", Title = "Dodge Challenger", Spawnable = true, Group = "TDM Cars Dodge")]
-public partial class RenaultEntity : Prop, IUse
+public partial class Dodge_Challenger_Entity : Prop, IUse
 {
-	public static float renault_speed_divide = 0.3f; // 0.0f = low -- 0.5f medium -- 1.0f fast	
+	public static float speed_divide = 0.8f; // 0.0f = low -- 0.5f medium -- 1.0f fast	
 
   	[ConVar.Replicated( "debug_car" )]
 
 	public static bool debug_car { get; set; } = false;
 
-	private RenaultWheel frontLeft;
-	private RenaultWheel frontRight;
-	private RenaultWheel backLeft;
-	private RenaultWheel backRight;
+	private Dodge_Challenger_Wheel frontLeft;
+	private Dodge_Challenger_Wheel frontRight;
+	private Dodge_Challenger_Wheel backLeft;
+	private Dodge_Challenger_Wheel backRight;
 
 	private float frontLeftDistance;
 	private float frontRightDistance;
@@ -51,12 +51,12 @@ public partial class RenaultEntity : Prop, IUse
 
 	private InputState currentInput;
 
-	public RenaultEntity()
+	public Dodge_Challenger_Entity()
 	{
-		frontLeft = new RenaultWheel( this );
-		frontRight = new RenaultWheel( this );
-		backLeft = new RenaultWheel( this );
-		backRight = new RenaultWheel( this );
+		frontLeft = new Dodge_Challenger_Wheel( this );
+		frontRight = new Dodge_Challenger_Wheel( this );
+		backLeft = new Dodge_Challenger_Wheel( this );
+		backRight = new Dodge_Challenger_Wheel( this );
 	}
 
 	private Player driver;
@@ -268,7 +268,7 @@ public partial class RenaultEntity : Prop, IUse
 		if ( backWheelsOnGround )
 		{
 			var forwardSpeed = MathF.Abs( localVelocity.x );
-			var speedFactor = renault_speed_divide - (forwardSpeed / 5000.0f).Clamp( 0.0f, 1.0f );
+			var speedFactor = speed_divide - (forwardSpeed / 5000.0f).Clamp( 0.0f, 1.0f );
 			var acceleration = speedFactor * (accelerateDirection < 0.0f ? 500.0f : 1000.0f) * accelerateDirection * dt;
 			body.Velocity += rotation * new Vector3( acceleration, 0, 0 );
 		}
@@ -370,8 +370,8 @@ public partial class RenaultEntity : Prop, IUse
 		if ( user is SandboxPlayer player && player.Vehicle == null )
 		{
 			player.Vehicle = this;
-			player.VehicleController = new RenaultController();
-			player.VehicleCamera = new RenaultCamera();
+			player.VehicleController = new Dodge_Challenger_Controller();
+			player.VehicleCamera = new Dodge_Challenger_Camera();
 			player.Tags.Add( "driving" );
 			driver = player;
 		}

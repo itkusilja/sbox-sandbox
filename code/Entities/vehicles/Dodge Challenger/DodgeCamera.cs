@@ -1,7 +1,7 @@
 using Sandbox;
 using System;
 
-public class RenaultCamera : Camera
+public class Dodge_Challenger_Camera : Camera
 {
 	protected virtual float MinFov => 80.0f;
 	protected virtual float MaxFov => 100.0f;
@@ -42,7 +42,7 @@ public class RenaultCamera : Camera
 		var pawn = Local.Pawn;
 		if ( pawn == null ) return;
 
-		var car = (pawn as SandboxPlayer)?.Vehicle as RenaultEntity;
+		var car = (pawn as SandboxPlayer)?.Vehicle as Dodge_Challenger_Entity;
 		if ( !car.IsValid() ) return;
 
 		Viewer = null;

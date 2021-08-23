@@ -1,14 +1,14 @@
 using Sandbox;
 using System;
 
-struct RenaultWheel
+struct Dodge_Challenger_Wheel
 {
-	private readonly RenaultEntity _parent;
+	private readonly Dodge_Challenger_Entity _parent;
 
 	private float _previousLength;
 	private float _currentLength;
 
-	public RenaultWheel( RenaultEntity parent )
+	public Dodge_Challenger_Wheel(Dodge_Challenger_Entity parent )
 	{
 		_parent = parent;
 		_previousLength = 0;
@@ -31,7 +31,7 @@ struct RenaultWheel
 		wheel = length * tr.Fraction;
 		var wheelRadius = (17 * _parent.Scale);
 
-		if ( !doPhysics && RenaultEntity.debug_car )
+		if ( !doPhysics && Dodge_Challenger_Entity.debug_car )
 		{
 			var wheelPosition = tr.Hit ? tr.EndPos : wheelExtend;
 			wheelPosition += rotation.Up * wheelRadius ;

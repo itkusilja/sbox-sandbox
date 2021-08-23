@@ -1,7 +1,7 @@
 using Sandbox;
 
 [Library]
-public class RenaultController : PawnController
+public class Dodge_Challenger_Controller : PawnController
 {
 	public override void FrameSimulate()
 	{
@@ -15,7 +15,7 @@ public class RenaultController : PawnController
 		var player = Pawn as SandboxPlayer;
 		if ( !player.IsValid() ) return;
 
-		var car = player.Vehicle as RenaultEntity;
+		var car = player.Vehicle as Dodge_Challenger_Entity;
 		if ( !car.IsValid() ) return;
 
 		car.Simulate( Client );
