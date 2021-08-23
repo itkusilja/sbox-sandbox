@@ -35,7 +35,7 @@
 				[
 					{
 						_class = "Bone"
-						name = "bip01_r_hand"
+						name = "hold_R"
 						children = 
 						[
 							{
@@ -89,39 +89,6 @@
 						angular_damping = 0.0
 						use_mass_center_override = false
 						mass_center_override = [ 0.0, 0.0, 0.0 ]
-					},
-				]
-			},
-			{
-				_class = "PhysicsShapeList"
-				children = 
-				[
-					{
-						_class = "PhysicsHullFile"
-						name = "W_IRifle_reference_0_mesh"
-						parent_bone = ""
-						surface_prop = "default"
-						collision_prop = "default"
-						recenter_on_parent_bone = true
-						offset_origin = [ 0.0, 0.0, 0.0 ]
-						offset_angles = [ 0.0, 0.0, 0.0 ]
-						align_origin_x_type = "None"
-						align_origin_y_type = "None"
-						align_origin_z_type = "None"
-						filename = "models/weapons/ak47/w_tct_ak47_refs/phys/w_tct_ak47_phy.dmx"
-						import_scale = 1.0
-						faceMergeAngle = 10.0
-						maxHullVertices = 0
-						import_mode = "SingleHull"
-						optimization_algorithm = "QEM"
-						import_filter = 
-						{
-							exclude_by_default = true
-							exception_list = 
-							[
-								"W_IRifle_reference_0_mesh",
-							]
-						}
 					},
 				]
 			},
@@ -188,8 +155,8 @@
 						_class = "RenderMeshFile"
 						name = "w_tct_ak47_bg_studio_lod0"
 						filename = "models/weapons/ak47/w_tct_ak47_refs/mesh/w_tct_ak47_bg_studio_lod0.dmx"
-						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_translation = [ 0.0, -5.0, -4.0 ]
+						import_rotation = [ 180.0, 0.0, 25.0 ]
 						import_scale = 1.0
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
@@ -249,6 +216,32 @@
 					},
 				]
 				default_root_bone_name = ""
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "pbs_is_unused.vmat"
+								to = "models/weapons/ak47/texture/pbs.vmat"
+							},
+							{
+								from = "t1_is_unused.vmat"
+								to = "models/weapons/ak47/texture/t1.vmat"
+							},
+							{
+								from = "t2_is_unused.vmat"
+								to = "models/weapons/ak47/texture/t2.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
 			},
 		]
 		model_archetype = ""
